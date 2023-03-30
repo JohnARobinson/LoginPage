@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <script type="text/javascript" src="main.js"></script>
+
+    <div class="login">
+      <h1 class="login_Form_Title">Login</h1>
+      <form id="login_form_ID" action="login.php" method="post">
+            <div class="form_Message">
+                  <label for="login"><input class="login_Input" id="login_Username" name="login_Username" type="text" placeholder="Enter your Email or Username" /></label>
+                  <label for="password"><input class="login_Input" id="login_Password" name="login_Password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Enter your Password" /></label>
+                  <button name="loginbutton" id="login_submit" class="form_Button" type="submit">Login</button>
+            </div>
+      </form>
+      <div class="links"></div>
+      <p class="form_Link"><a href="./" class="form_Link">Forgot Username</a></p>
+      <p class="form_Link"><a href="./" class="form_Link">Forgot Password</a></p>
+      <p class="form_Link"><a href="./" id="linkNewAccount" class="form_Link">Don't have an account?</a></p>
+      <div class="login_Input--error form_hidden">Incorrect username or password</div>
+     </div>
+
+    <div class="new_Account form_hidden" id="new_AccountID">
+        <h1 class="newAcc_Form_Title">Create an Account</h1>
+        <form id="newAcc_form_ID" action="newAcc.php" method="post">
+            <div class="form_Message">
+                <label for="username"><input class="newAccInput" id="username" name="new_Username" type="text" placeholder="Enter your Username" required/></label>
+                <label for="email"><input class="newAccInput" id="email" name="email" type="email" placeholder="Enter your Email Address" required /></label>
+                <label for="password"><input class="newAccInput" id="new-password" name="new_Password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Enter your Password" required /></label>
+                <label for="password"><input class="newAccInput" id="new-password" name="new_Passwordc" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Confirm your Password" required /></label>
+                <button name="newAccbutton" id="newAcc_submit" class="form_Button" type="submit">Create Account</button>
+                
+            </div>
+        </form>
+        
+        <p class="form_Link"><a href="./" id="linkLogin" class="form_Link">Already have an account? Sign In</a></p>
+        <div class="login_Input--error form_hidden">Account already exists</div>
+    </div>
+
+  </body>
+</html>

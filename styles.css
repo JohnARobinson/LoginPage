@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(185, 185, 185);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.login{
+    width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0, 0, 40px, black;
+    background: white;
+    border-radius: 4px;
+}
+.new_Account{
+    width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0, 0, 40px, black;
+    background: white;
+    border-radius: 4px;
+}
+
+.new_Account,.newAccInput,.form_Button{
+    font-family: 'Roboto', sans-serif;
+}
+.login,.login_Input,.form_Button{
+    font-family: 'Roboto', sans-serif;
+}
+
+form > *:first-child{
+    margin-top: 0;
+}
+form > *:last-child{
+    margin-bottom: 0;
+}
+.login_Form_Title, .newAcc_Form_Title{
+    text-align: center;
+}
+
+.login_Input--error{
+    color: red;
+    text-align: center;
+}
+
+.login_Input, .newAccInput{
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline: none;
+    background: rgb(240, 238, 238);
+}
+
+.newAccInput:focus{
+    border-color: lightskyblue;
+    background-color: white;
+}
+.login_Input:focus{
+    border-color: lightskyblue;
+    background-color: white;
+}
+.form_Button{
+    display: block;
+    height:40px;
+    width: 100%;
+    padding: 1rem, 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background: darkblue;
+}
+
+.form_Button:hover{
+    background: rgb(0, 0, 77);
+}
+
+.form_Button:active{
+    transform: scale(.98);
+}
+.links{
+    text-align: center;
+
+}
+.form_Link{
+    text-align: center;
+    color: darkblue;
+    text-decoration: none;  
+    cursor: pointer;
+    font-size: 16px;
+}
+.form_Link:hover{
+    text-decoration: underline;
+}
+
+.form_hidden{
+    display: none;
+}
